@@ -141,7 +141,7 @@ pub extern "C" fn handle() {
                     game_state.pebbles_count = pebbles_count;
                     game_state.max_pebbles_per_turn = max_pebbles_per_turn;
                     game_state.pebbles_remaining = pebbles_count;
-                    game_state.difficulty = difficulty;
+                    game_state.difficulty = difficulty.clone();
                     game_state.first_player = first_player.clone();
                     game_state.winner = None;
 
